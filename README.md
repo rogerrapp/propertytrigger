@@ -1,4 +1,4 @@
 propertytrigger
 ===============
 
-Jenkins plugin monitors selected properties in a propertyfile cheked into Perforce
+Jenkins plugin whix monitors selected properties in a property file checked into Perforce

@@ -1,0 +1,6 @@
+<!--
+  This view is used to render the installed plugins page.
+-->
+<div>
+  Trigger on changes of seleceted properties in a properties file.
+</div>

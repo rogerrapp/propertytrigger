@@ -1,0 +1,32 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <!--
+    This jelly script is used for per-project configuration.
+
+    See global.jelly for a general discussion about jelly script.
+  -->
+
+
+  <f:entry title="Perforce Port:">
+      <f:textbox name="p4port"  value="${instance.p4Port}" default="perforce:1666"/>
+  </f:entry>
+
+  <f:entry title="Perforce User:">
+      <f:textbox name="p4User"  value="${instance.p4User}"/>
+  </f:entry>
+      
+
+  <f:entry title="Perforce Password:">
+      <f:password name="p4Passwd" value="${instance.p4Passwd}"/>
+  </f:entry>
+
+  <f:entry title="List of subscribed properties:">
+       <f:textarea name="propslist" value="${instance.propslist}"/>
+  </f:entry>
+
+  <f:entry title="${%Schedule}" help="/descriptor/hudson.triggers.TimerTrigger/help/spec">
+       <f:textarea name="cronTabSpec"
+                   checkUrl="'${rootURL}/trigger/TimerTrigger/check?value='+encodeURIComponent(this.value)"
+                   value="${instance.spec}"/>
+   </f:entry>
+
+</j:jelly>
