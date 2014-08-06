@@ -19,3 +19,6 @@ Subscribe on the key 'bar':
 
 //depot/theStream/config/lab.properties;bar
 
+
+This trigger communicates with Perforce through the p4java api.
+http://www.perforce.com/perforce/doc.current/manuals/p4java/
